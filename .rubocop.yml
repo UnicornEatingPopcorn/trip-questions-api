@@ -1,0 +1,16 @@
+require:
+  - rubocop-performance
+  - rubocop-rails
+  - rubocop-rspec
+
+Documentation:
+  Enabled: false
+
+Metrics/LineLength:
+  Max: 100
+
+AllCops:
+  DisplayStyleGuide: true
+  DisplayCopNames: true
+  Exclude:
+    - 'bin/**'
