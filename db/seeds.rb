@@ -9,59 +9,91 @@
 questions = [
   {
     title: 'From',
-    component: 'AirportSelect'
+    component: 'AirportSelect',
+    position: 1
   },
   {
     title: 'To',
-    component: 'AirportSelect'
+    component: 'AirportSelect',
+    position: 2
   },
   {
     title: 'Seats',
-    component: 'BaseSelect'
+    component: 'SeatsSelect',
+    position: 3
   },
   {
     title: 'Which way',
-    component: 'BaseSelect'
+    component: 'DirectionsSelect',
+    position: 4
   },
   {
     title: 'When to go',
-    component: 'BaseCalendar'
+    component: 'BaseCalendar',
+    position: 5
   },
   {
     title: 'Return date',
-    component: 'BaseCalendar'
+    component: 'BaseCalendar',
+    position: 6
   },
   {
     title: 'Expenses',
-    component: 'BaseSelect'
+    component: 'ExpensesSelect',
+    position: 7
   },
   {
     title: 'Road book',
-    component: 'BaseSelect'
+    component: 'RoadBookSelect',
+    position: 8
   },
   {
     title: 'Arrival time',
-    component: 'BaseSelect'
+    component: 'ArrivalTimeSelect',
+    position: 9
   },
   {
     title: 'Return time',
-    component: 'BaseSelect'
+    component: 'ReturnTimeSelect',
+    position: 10
   },
   {
     title: 'Max transfers',
-    component: 'BaseSelect'
+    component: 'MaxTransfersSelect',
+    position: 11
   },
   {
     title: 'Max flight time',
-    component: 'BaseSelect'
+    component: 'MaxFlightTimeSelect',
+    position: 12
   }
 ]
 questions.each { |question| Question.find_or_create_by(question) }
 
 airports = [
   {
-    icao: 'PUPS',
-    country: 'Russia'
+    "icao": '00AK',
+    "name": 'Lowell Field',
+    "city": 'Anchor Point',
+    "country": 'US',
+    "lat": 59.94919968,
+    "lon": -151.695999146
+  },
+  {
+    "icao": '00AL',
+    "name": 'Epps Airpark',
+    "city": 'Harvest',
+    "country": 'US',
+    "lat": 34.8647994995,
+    "lon": -86.7703018188
+  },
+  {
+    "icao": '00AZ',
+    "name": 'Cordes Airport',
+    "city": 'Cordes',
+    "country": 'US',
+    "lat": 34.3055992126,
+    "lon": -112.1650009155
   }
 ]
 
