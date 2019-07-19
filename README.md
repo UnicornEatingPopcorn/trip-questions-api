@@ -1,5 +1,5 @@
-# Rails 6 JSON API Boilerplate
-![Hello world](https://i.imgur.com/uRG2hhP.png)
+# Trip questions API
+!(https://i.imgur.com/lFECtme.png)
 
 # Setup
 

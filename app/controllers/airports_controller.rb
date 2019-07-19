@@ -5,4 +5,8 @@ class AirportsController < ApplicationController
     airports = Airport.all
     render json: airports
   end
+
+  def fuzzy_search
+    render json: Airport.fuzzy_search(params[:query])
+  end
 end
