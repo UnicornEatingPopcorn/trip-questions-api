@@ -1,16 +1,21 @@
-class PlansController < ApplicationController
-  def index
-  end
+# frozen_string_literal: true
 
-  def show
-  end
+class PlansController < ApplicationController
+  def index; end
+
+  def show; end
 
   def create
+    binding.pry
   end
 
-  def update
-  end
+  def update; end
 
-  def destroy
+  def destroy; end
+
+  private
+
+  def plan_params
+    params.require(:plan).permit(answers: [])
   end
 end

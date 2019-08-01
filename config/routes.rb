@@ -3,7 +3,7 @@
 Rails.application.routes.draw do
   resources :questions, only: :index
 
-  resources :airports, only: :index
+  get 'airports/fuzzy_search', to: 'airports#fuzzy_search'
   resources :plans
   root to: 'questions#index'
 end
