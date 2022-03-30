@@ -14,7 +14,7 @@ gem 'bcrypt'
 gem 'fast_jsonapi'
 gem 'hiredis'
 gem 'jwt_sessions'
-gem 'puma', '~> 3.11'
+gem 'puma', '~> 4.3'
 gem 'redis'
 
 # Use Active Storage variant
